@@ -4,4 +4,4 @@ metallb:
     - name: default
       protocol: layer2
       addresses:
-      - 192.168.254.150-192.168.254.180
+      - 127.0.0.240/28
