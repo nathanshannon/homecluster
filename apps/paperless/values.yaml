@@ -1,7 +1,7 @@
 paperless:
   ingress:
     main:
-      enabled: true
+      enabled: false
       ingressClassName: nginx
       hosts:
         - host: &host paperless.host.nathanshannon.net
