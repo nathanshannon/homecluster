@@ -20,10 +20,6 @@ tools:
 docs:
 	make -C docs
 
-dev:
-	make -C dev
+devinit:
+	minikube start --memory 8192 --cpus 4
 	make -C bootstrap
-
-setup:
-	### Install a bunch of stuff
-
