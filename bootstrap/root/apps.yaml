@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: apps
+  name: htpc
 spec:
   generators:
     - git:
         repoURL: https://github.com/nathanshannon/homecluster.git
-        revision: master
+        revision: main
         directories:
           - path: apps/*
   template:

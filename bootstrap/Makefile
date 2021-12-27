@@ -14,7 +14,4 @@ argocd:
 root:
 	kustomize build ./root | kubectl apply -f -
 	kubectl -n argocd wait --timeout=300s --for condition=ResourcesUpToDate \
-		applicationset/bootstrap \
-		applicationset/system \
-		applicationset/platform \
 		applicationset/apps
