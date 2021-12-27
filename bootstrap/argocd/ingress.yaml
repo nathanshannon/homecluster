@@ -8,7 +8,7 @@ spec:
     - host: argocd.home.nathanshannon.net
       http:
         paths:
-          - path: /
+          - path: /argocd
             pathType: Prefix
             backend:
               service:
