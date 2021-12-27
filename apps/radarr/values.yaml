@@ -1,10 +1,10 @@
-sonarr:
+radarr:
   ingress:
     main:
       enabled: true
       ingressClassName: nginx
       hosts:
-        - host: &host sonarr.home.nathanshannon.net
+        - host: &host radarr.home.nathanshannon.net
           paths:
             - path: /
               pathType: Prefix 

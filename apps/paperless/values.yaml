@@ -4,7 +4,7 @@ paperless:
       enabled: false
       ingressClassName: nginx
       hosts:
-        - host: &host paperless.host.nathanshannon.net
+        - host: &host paperless.home.nathanshannon.net
           paths:
             - path: /
               pathType: Prefix
