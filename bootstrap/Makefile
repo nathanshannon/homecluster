@@ -16,4 +16,4 @@ root:
 	kubectl -n argocd wait --timeout=300s --for condition=ResourcesUpToDate \
 		applicationset/bootstrap \
 		applicationset/apps \
-		applicationset/systems
+		applicationset/system
