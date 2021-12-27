@@ -5,7 +5,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/khuedoan/homelab.git
+        repoURL: https://github.com/nathanshannon/homecluster.git
         revision: master
         directories:
           - path: apps/*
@@ -18,7 +18,7 @@ spec:
         namespace: '{{path.basename}}'
       project: default
       source:
-        repoURL: https://github.com/khuedoan/homelab.git
+        repoURL: https://github.com/nathanshannon/homecluster.git
         path: '{{path}}'
       syncPolicy:
         automated:
