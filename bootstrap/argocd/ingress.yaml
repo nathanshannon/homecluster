@@ -2,14 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: argocd-server
-  annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
-    external-dns.alpha.kubernetes.io/target: tunnel.home.nathanshannon.net
-    external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
 spec:
   ingressClassName: nginx
   rules:
-    - host: argocd.home.nathanshannon.com
+    - host: argocd.home.nathanshannon.net
       http:
         paths:
           - path: /
@@ -19,7 +15,3 @@ spec:
                 name: argocd-server
                 port:
                   name: http
-  tls:
-    - hosts:
-        - argocd.home.nathanshannon.com
-      secretName: argocd-secret
