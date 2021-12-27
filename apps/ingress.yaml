@@ -6,13 +6,6 @@ spec:
   rules:
   - http:
       paths:
-      - path: /sonarr
-        pathType: Exact
-        backend:
-          service:
-            name: sonarr
-            port:
-              name: webui
       - path: /radarr
         pathType: Exact
         backend:
