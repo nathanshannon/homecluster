@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: radarr
+spec:
+  template:
+    spec:
+      volumes: 
+      - hostPath: 
+          path: /opt/htpc 
+          type: DirectoryOrCreate 
+        name: nzb
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sonarr
+spec:
+  template:
+    spec:
+      volumes: 
+      - hostPath: 
+          path: /opt/htpc 
+          type: DirectoryOrCreate 
+        name: nzb

@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: htpc
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /sonarr
+        pathType: Exact
+        backend:
+          service:
+            name: sonarr
+            port:
+              name: webui
+      - path: /radarr
+        pathType: Exact
+        backend:
+          service:
+            name: radarr
+            port:
+              name: webui
