@@ -1,0 +1,10 @@
+paperless:
+  ingress:
+    main:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: &host paperless.host.nathanshannon.net
+          paths:
+            - path: /
+              pathType: Prefix
