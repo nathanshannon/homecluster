@@ -1,7 +1,0 @@
-metallb:
-  configInline:
-    address-pools:
-    - name: default
-      protocol: layer2
-      addresses:
-      - 127.0.0.240/28
