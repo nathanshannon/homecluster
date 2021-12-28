@@ -1,7 +1,7 @@
 radarr:
   ingress:
     main:
-      enabled: false
+      enabled: true
       ingressClassName: nginx
       hosts:
         - host: &host radarr.home.nathanshannon.net

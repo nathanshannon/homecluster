@@ -1,10 +1,10 @@
-nzbhydra2:
+homebridge:
   ingress:
     main:
       enabled: true
       ingressClassName: nginx
       hosts:
-        - host: &host nzbhydra2.home.nathanshannon.net
+        - host: &host homebridge.home.nathanshannon.net
           paths:
             - path: /
               pathType: Prefix

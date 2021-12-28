@@ -1,7 +1,7 @@
 sonarr:
   ingress:
     main:
-      enabled: false
+      enabled: true
       ingressClassName: nginx
       hosts:
         - host: &host sonarr.home.nathanshannon.net

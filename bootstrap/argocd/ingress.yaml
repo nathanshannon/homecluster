@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: localhost
+    - host: argocd.home.nathanshannon.net
       http:
         paths:
           - path: /argocd
