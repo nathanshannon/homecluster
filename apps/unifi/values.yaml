@@ -1,0 +1,10 @@
+unifi:
+  ingress:
+    main:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: &host unifi.home.nathanshannon.net
+          paths:
+            - path: /
+              pathType: Prefix 

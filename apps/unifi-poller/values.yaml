@@ -1,0 +1,10 @@
+unifi-poller:
+  ingress:
+    main:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: &host unifi-poller.home.nathanshannon.net
+          paths:
+            - path: /
+              pathType: Prefix 

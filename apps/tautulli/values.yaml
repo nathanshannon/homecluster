@@ -1,0 +1,10 @@
+tautulli:
+  ingress:
+    main:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: &host tautulli.home.nathanshannon.net
+          paths:
+            - path: /
+              pathType: Prefix 
