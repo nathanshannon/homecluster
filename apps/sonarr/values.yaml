@@ -6,5 +6,5 @@ sonarr:
       hosts:
         - host: &host sonarr.home.nathanshannon.net
           paths:
-            - path: /
+            - path: /sonarr
               pathType: Prefix 

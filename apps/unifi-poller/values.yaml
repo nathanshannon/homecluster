@@ -6,5 +6,5 @@ unifi-poller:
       hosts:
         - host: &host unifi-poller.home.nathanshannon.net
           paths:
-            - path: /
+            - path: /unifi-poller
               pathType: Prefix 

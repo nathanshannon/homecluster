@@ -6,5 +6,5 @@ home-assistant:
       hosts:
         - host: &host home-assistant.home.nathanshannon.net
           paths:
-            - path: /
+            - path: /home-assistant
               pathType: Prefix

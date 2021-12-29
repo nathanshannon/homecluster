@@ -6,5 +6,5 @@ tautulli:
       hosts:
         - host: &host tautulli.home.nathanshannon.net
           paths:
-            - path: /
+            - path: /tautulli
               pathType: Prefix 

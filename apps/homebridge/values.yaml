@@ -6,5 +6,5 @@ homebridge:
       hosts:
         - host: &host homebridge.home.nathanshannon.net
           paths:
-            - path: /
+            - path: /homebridge
               pathType: Prefix

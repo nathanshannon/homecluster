@@ -6,5 +6,5 @@ unifi:
       hosts:
         - host: &host unifi.home.nathanshannon.net
           paths:
-            - path: /
+            - path: /unifi
               pathType: Prefix 

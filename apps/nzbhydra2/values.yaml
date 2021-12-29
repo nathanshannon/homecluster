@@ -6,5 +6,5 @@ nzbhydra2:
       hosts:
         - host: &host nzbhydra2.home.nathanshannon.net
           paths:
-            - path: /
+            - path: /nzbhydra2
               pathType: Prefix

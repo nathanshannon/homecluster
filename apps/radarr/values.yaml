@@ -6,5 +6,5 @@ radarr:
       hosts:
         - host: &host radarr.home.nathanshannon.net
           paths:
-            - path: /
+            - path: /radarr
               pathType: Prefix 
